@@ -13,9 +13,11 @@ function BidPrice() {
         console.error(error);
       }
     };
-
-    fetchData();
-  }, []);
+    // const interval = setInterval(() => {
+      fetchData();
+    // }, 1000);
+    // return () => clearInterval(interval);
+  });
 
   return (
     <div style={{ textAlign: "center",paddingTop: '150px' }}>
